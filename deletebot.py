@@ -11,5 +11,8 @@ async def on_message(message):
     if msg.startswith('https://'):
         msg.delete()
 
+    elif msg.startswith('http'):
+        msg.delete()
+
  if __name__ == '__main__':
     client.run()
